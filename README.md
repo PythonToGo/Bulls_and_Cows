@@ -22,12 +22,28 @@ Bulls and Cows is a 2 player game. One player thinks of a number, while the othe
 5. If 3S is not achieved, the game restarts from step 2.
 6. If the user achieves 3S, "Congratulations. You have matched all three numbers in * attempts." is displayed, and the game ends.
 
+## Functions
+'generate_numbers()'
+
+Randomly picks 3 different numbers between 0 and 9 and returns a list containing those numbers.
+
+'take_guess()'
+After repeatedly inputting 3 numbers from the user, the numbers entered by the user are organized in a list and returned.
+
+'get_score'
+This function takes two parameters.
+'guesses' → a list of 3 numbers chosen by the user
+'solution' → A list of 3 correct numbers selected by the computer
+Compares the two lists to calculate and return the number of strikes and balls.
+
+
 ## Example of gameplay:
 
 Here is a result sample.
 The computer has randomly selected three different numbers between 0 and 9 in random order.
 
-  #  Please enter three numbers one by one.
+  '''
+  Please enter three numbers one by one.
   Enter the 1st number: 2
   Enter the 2nd number: 2
   Duplicate number. Please enter again.
@@ -41,7 +57,7 @@ The computer has randomly selected three different numbers between 0 and 9 in ra
   Enter the 1st number: 8
   Enter the 2nd number: 2
   Enter the 3rd number: 0
-  1S 2B
+  1S 2B"""
 
   Please enter three numbers one by one.
   Enter the 1st number: 2
@@ -50,3 +66,4 @@ The computer has randomly selected three different numbers between 0 and 9 in ra
   3S 0B
 
   Congratulations. You have matched all three numbers in 3 attempts.
+  '''
